@@ -18,6 +18,7 @@ function App() {
           </nav>
         </header>
         <Routes>
+          <Route path="/" element={<div>Home Page</div>} />
           <Route path="/employer-dashboard" element={<EmployerDashboard />} />
         </Routes>
       </div>
