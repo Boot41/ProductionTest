@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import EmployerDashboard from './pages/EmployerDashboard';
+import CandidateDashboard from './pages/CandidateDashboard';
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
           <nav>
             <Link to="/" className="App-link">Home</Link>
             <Link to="/employer-dashboard" className="App-link">Employer Dashboard</Link>
+            <Link to="/candidate-dashboard" className="App-link">Candidate Dashboard</Link>
           </nav>
         </header>
         <Routes>
           <Route path="/" element={<div>Home Page</div>} />
           <Route path="/employer-dashboard" element={<EmployerDashboard />} />
+          <Route path="/candidate-dashboard" element={<CandidateDashboard />} />
         </Routes>
       </div>
     </Router>
